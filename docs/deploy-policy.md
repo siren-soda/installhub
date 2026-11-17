@@ -1,4 +1,4 @@
-# Deploy policy — InstallHub suite (SafeInstall, TechMate, InstallHub)
+# Deploy policy — InstallHub suite (SafeInstall, SafeTradie, TechMate, InstallHub)
 
 Source of truth for the weekly deploy. Moved here on 17 Nov 2026 from the archived Security Suite project (`claude/deploy-policy.md`) so the scheduled tasks can keep it up to date. This folder is blocked from the live site (see `netlify.toml`).
 
@@ -25,6 +25,7 @@ Why: changes are batched into one weekly deploy so Dean gets a single, predictab
 | Site | Repo | Live branch | Queue branch |
 |---|---|---|---|
 | SafeInstall | siren-soda/safeinstall | `main` → safeinstall.org | `next` |
+| SafeTradie | siren-soda/safetradie | `main` → safetradie.installhub.org | `next` (created 17 Nov 2026) |
 | TechMate | siren-soda/techmate | `main` → techmate.installhub.org | `next` (created 16 Nov 2026 from `main`) |
 | InstallHub | siren-soda/installhub | `main` → installhub.org | `next` |
 
@@ -37,6 +38,10 @@ Netlify environment variable changes only take effect on the next production dep
 - (empty — last deployed Tue 17 Nov 2026)
 - Queued on `next`: anonymous GoatCounter visit + action counting (pre-start sent, SWMS sent, PDF saved, app installed) and updated privacy wording. Code: `safeinstall` (safeinstall.goatcounter.com).
 
+## Queue — SafeTradie
+- New 17 Nov 2026: pre-start and SWMS for residential electricians, plumbers/gasfitters and carpenters, forked from SafeInstall. `main` holds the first version; it goes live when Dean connects the repo in Netlify.
+- Waiting on Dean: connect siren-soda/safetradie in Netlify (production branch `main`, branch deploys off), add `RESEND_API_KEY`, add custom domain safetradie.installhub.org (CNAME at Porkbun).
+
 ## Queue — TechMate
 - Queued on `next`: anonymous GoatCounter visit counts (code `techmate`), Ask TechMate AI question counts (count only, never the question), app installs; About page privacy wording.
 - (empty — last deployed Tue 17 Nov 2026, by hand)
@@ -45,5 +50,6 @@ Netlify environment variable changes only take effect on the next production dep
 Decided 17 Nov 2026 (Dean): factory default codes that are printed in manufacturer manuals may be published, labelled as factory defaults with the manual and page, plus a reminder to change them. Never publish codes from company in-house docs or any real site's codes.
 
 ## Queue — InstallHub
+- Queued on `next`: SafeTradie card ("For home trades") on the home page, /safetradie short link, SafeTradie added to terms of use and privacy policy.
 - Queued on `next`: privacy policy updated for SafeInstall's and TechMate's GoatCounter visit counts (goes live with the counters).
 - (empty — last deployed Tue 17 Nov 2026, by hand)

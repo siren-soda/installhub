@@ -9,10 +9,15 @@
   status = 404
   force = true
 
-# Short links: installhub.org/safeinstall and installhub.org/techmate
+# Short links: installhub.org/safeinstall, /safetradie and /techmate
 [[redirects]]
   from = "/safeinstall"
   to = "https://safeinstall.org"
+  status = 302
+
+[[redirects]]
+  from = "/safetradie"
+  to = "https://safetradie.installhub.org"
   status = 302
 
 [[redirects]]

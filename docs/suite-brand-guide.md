@@ -11,6 +11,7 @@ One family: a navy shield with a single orange glyph. The glyph tells you which 
 | Tool | Glyph | Status |
 |---|---|---|
 | SafeInstall | Tick (check mark) | Live |
+| SafeTradie | House (roof chevron + walls) | Added 17 Nov 2026 — residential trades |
 | TechMate | Magnifying glass | Agreed [verify the SVG] |
 
 ### Shield geometry (120×120 viewBox)
