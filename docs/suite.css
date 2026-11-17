@@ -1,0 +1,107 @@
+/* Installer Tools Suite — shared tokens + base components
+   Used by SafeInstall and TechMate. Values match live safeinstall.org (Nov 2026).
+   Copy into each repo as /suite.css and load it BEFORE site-specific CSS.
+   Existing SafeInstall variable names (--bg, --brand, --warn, etc.) are kept so nothing breaks. */
+
+:root {
+  /* Brand */
+  --brand: #1f3a5f;        /* navy */
+  --brand-2: #2b4d7a;      /* shield highlight */
+  --brand-soft: #e8eef6;
+  --accent: #F59E42;       /* orange glyph / wordmark */
+  --accent-soft: #fef3e6;
+
+  /* Surfaces & text */
+  --bg: #f3f4f1;
+  --card: #ffffff;
+  --field: #fbfcfb;
+  --btn-2: #e7eae6;
+  --ink: #1b2220;
+  --muted: #5b6561;
+  --line: #dce0db;
+
+  /* Status */
+  --warn: #9a3412;
+  --warn-soft: #fdeee4;
+  --yes: #15803d;
+  --yes-soft: #e8f3ec;
+  --no: #b91c1c;
+
+  /* Type */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-body: 16px;
+  --fs-sm: 14px;
+  --fs-xs: 12.5px;
+  --fs-label: 13px;
+  --lh: 1.45;
+
+  /* Spacing (4px base) */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px;
+
+  /* Shape & layout */
+  --r: 12px;      /* cards */
+  --r-btn: 10px;
+  --r-field: 9px;
+  --r-pill: 999px;
+  --max: 640px;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; overflow-x: hidden;
+  background: var(--bg); color: var(--ink);
+  font: var(--fs-body)/var(--lh) var(--font);
+  -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+}
+
+/* Header band */
+.suite-header { background: var(--brand); color: #fff; padding: var(--s4) var(--s4) 0; }
+.suite-header .in { max-width: var(--max); margin: 0 auto; }
+.suite-brand { display: flex; align-items: center; gap: var(--s3); margin-bottom: var(--s3); }
+.suite-logo { width: 44px; height: 44px; border-radius: 11px; background: #fff;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.suite-logo svg { width: 34px; height: 34px; }
+.suite-wordmark { margin: 0; font-size: 24px; letter-spacing: -.5px; line-height: 1.2; }
+.suite-wordmark span { color: var(--accent); }
+.suite-tagline { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; opacity: .75; line-height: 1.35; }
+.suite-pill { margin-left: auto; color: #fff; text-decoration: none; font: 600 13px var(--font);
+  border: 1px solid rgba(255,255,255,.45); border-radius: var(--r-pill); padding: 8px 12px; min-height: 36px;
+  display: inline-flex; align-items: center; gap: 6px; }
+@media (max-width: 420px) { .suite-tagline { font-size: 10.5px; letter-spacing: .05em; } }
+
+/* Page */
+main { max-width: var(--max); margin: 0 auto; padding: 14px var(--s3) 120px; }
+section, .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+  padding: 14px; margin-bottom: var(--s3); }
+section h2, .card h2 { font-size: 14px; margin: 0 0 10px; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--brand); }
+
+/* Buttons */
+.btn { appearance: none; border: 0; border-radius: var(--r-btn); padding: 13px 16px;
+  font: 600 15px var(--font); cursor: pointer; text-align: center; text-decoration: none; display: inline-block; }
+.btn.p { background: var(--brand); color: #fff; }
+.btn.s { background: var(--btn-2); color: var(--ink); }
+.btn.sm { padding: 8px 12px; font-size: 13px; }
+
+/* Fields */
+input[type=text], input[type=tel], input[type=email], input[type=search], textarea {
+  width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: var(--r-field);
+  font: inherit; background: var(--field); }
+input:focus, textarea:focus { outline: 2px solid var(--brand); outline-offset: 1px; border-color: transparent; }
+
+/* Messages */
+.note  { background: var(--brand-soft); border-radius: 10px; padding: 11px 12px; font-size: var(--fs-sm); margin-bottom: var(--s3); }
+.alert { background: var(--warn-soft); color: var(--warn); border-left: 4px solid var(--warn);
+  border-radius: 8px; padding: 10px 12px; font-size: var(--fs-sm); }
+.ok    { background: var(--yes-soft); color: #15602f; border-left: 4px solid var(--yes);
+  border-radius: 8px; padding: 10px 12px; font-size: var(--fs-sm); }
+.foot  { font-size: var(--fs-xs); color: var(--muted); }
+
+/* Shared footer + cross-links */
+.suite-footer { max-width: var(--max); margin: var(--s5) auto 0; padding: var(--s4) var(--s3) 140px;
+  border-top: 1px solid var(--line); font-size: var(--fs-xs); color: var(--muted); }
+.suite-footer .tools { display: flex; gap: var(--s4); flex-wrap: wrap; margin-bottom: var(--s2); }
+.suite-footer .tools a { display: inline-flex; align-items: center; gap: 6px; color: var(--brand);
+  font-weight: 600; text-decoration: none; font-size: var(--fs-sm); }
+.suite-footer .tools svg { width: 18px; height: 18px; }
+.suite-footer a { color: inherit; }
