@@ -40,6 +40,7 @@ Netlify environment variable changes only take effect on the next production dep
 
 ## Queue — SafeTradie
 - (empty — first deployed Tue 17 Nov 2026, by hand, at safetradie.installhub.org; Resend key added in Netlify)
+- Queued on `next`: "How it works" demo address changed to a made-up one (7 Spanner St, Toolville) — the old one was Dean's real suburb.
 
 ## Queue — TechMate
 - (empty — last deployed Tue 17 Nov 2026 ~9:30 pm, by hand at Dean's request: GoatCounter visit counts and About privacy wording)
