@@ -2,16 +2,16 @@
 
 Source of truth for the weekly deploy. Moved here on 17 Nov 2026 from the archived Security Suite project (`claude/deploy-policy.md`) so the scheduled tasks can keep it up to date. This folder is blocked from the live site (see `netlify.toml`).
 
-Why: all three sites are on Netlify's free plan. Every production deploy costs 15 of 300 monthly credits, and when credits run out every site on the team is paused ("Site not available") until the cycle resets. So production deploys are rationed.
+Why: changes are batched into one weekly deploy so Dean gets a single, predictable test each Wednesday morning instead of surprises mid-week. Since 17 Nov 2026 the sites are on Netlify's **Personal plan**: 1,000 credits a month with optional auto top-up. Each production deploy costs 15 credits; branch deploys and Deploy Previews cost nothing. Weekly deploys for all three sites use about 180 credits a month, so credits are no longer the constraint. Dean can push anything out earlier whenever he wants.
 
 ## The rule
 1. **When Dean asks for a change:** make it, test it, commit it to the **`next`** branch (never `main`), and reply starting with:
    **"Change request logged for weekly deploy."** followed by a one-line summary of what will go out. Add a line to that site's queue below.
 2. **Weekly deploy: Tuesday evening (~6:30 pm Melbourne).** If `next` has changes, merge `next` → `main` and push once. That's the single production deploy for the week. If nothing's queued, skip it (no credits used).
-3. **Exceptions — deploy straight away only if:**
-   - Dean says "instant update" / "deploy now", or
-   - it's a **critical fix** (site broken, key feature failing — e.g. Send/PDF on SafeInstall, search or Ask TechMate on TechMate, the home page on InstallHub — wrong safety information, privacy or security problem). In that case **alert Dean first**: "⚠️ Critical fix — recommend deploying now (uses 15 credits)" and deploy when he agrees.
-4. **Never trigger extra deploys** for small things (wording, colours, tweaks). Batch them.
+3. **Deploying early — Dean's call, any time:**
+   - When Dean says "deploy now" / "instant update" / "push it live" (for one site or all), run the same checks as the weekly deploy, fast-forward `main` to `next`, push once, clear the deployed lines from the queue, and confirm. No credit warning needed.
+   - For a **critical fix** (site broken, key feature failing — e.g. Send/PDF on SafeInstall, search or Ask TechMate on TechMate, the home page on InstallHub — wrong safety information, privacy or security problem), tell Dean straight away: "⚠️ Critical fix — recommend deploying now", and deploy when he agrees.
+4. **Don't deploy early on Claude's own initiative** for small things (wording, colours, tweaks). They wait for Tuesday unless Dean asks.
 5. Keep the queues below up to date: add a line when a change is logged; clear the deployed lines after each weekly deploy (keep "Waiting on Dean" lines).
 6. **Changes only under `docs/` in the InstallHub repo never count as a deploy on their own.** If InstallHub's `next` is ahead of `main` only by commits that touch `docs/`, skip the InstallHub deploy; they go out with the next real InstallHub change.
 
@@ -28,7 +28,7 @@ Why: all three sites are on Netlify's free plan. Every production deploy costs 1
 | TechMate | siren-soda/techmate | `main` → techmate.installhub.org | `next` (created 16 Nov 2026 from `main`) |
 | InstallHub | siren-soda/installhub | `main` → installhub.org | `next` |
 
-Netlify setting to confirm on each site: **Project configuration → Build & deploy → Branches and deploy contexts → Branch deploys: "Deploy only the production branch"** (so pushes to `next` cost nothing).
+Netlify setting on each site: **Project configuration → Developer settings → Branches and deploy contexts**: Production branch `main`, Branch deploys "Deploy only the production branch". Deploy Previews can stay on (free). Confirmed on InstallHub 17 Nov 2026; SafeInstall and TechMate not yet checked (low priority: branch deploys are free on the Personal plan).
 
 Netlify environment variable changes only take effect on the next production deploy — add them before Tuesday and they go live with the weekly deploy (no extra credits).
 
