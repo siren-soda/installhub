@@ -28,11 +28,12 @@ Why: changes are batched into one weekly deploy so Dean gets a single, predictab
 | TechMate | siren-soda/techmate | `main` → techmate.installhub.org | `next` (created 16 Nov 2026 from `main`) |
 | InstallHub | siren-soda/installhub | `main` → installhub.org | `next` |
 
-Netlify setting on each site: **Project configuration → Developer settings → Branches and deploy contexts**: Production branch `main`, Branch deploys "Deploy only the production branch". Deploy Previews can stay on (free). Confirmed on InstallHub 17 Nov 2026; SafeInstall and TechMate not yet checked (low priority: branch deploys are free on the Personal plan).
+Netlify setting on each site: **Project configuration → Developer settings → Branches and deploy contexts**: Production branch `main`, Branch deploys "Deploy only the production branch". Deploy Previews can stay on (free). Confirmed on InstallHub and one other site 17 Nov 2026; the third not yet checked (low priority: branch deploys are free on the Personal plan).
 
 Netlify environment variable changes only take effect on the next production deploy — add them before Tuesday and they go live with the weekly deploy (no extra credits).
 
 ## Queue — SafeInstall
+- Queued on `next`: shared "Part of InstallHub" footer (links to TechMate) and a TechMate card in Resources.
 - (empty — last deployed Tue 17 Nov 2026)
 - Queued on `next`: anonymous GoatCounter visit + action counting (pre-start sent, SWMS sent, PDF saved, app installed) and updated privacy wording. Code: `safeinstall` (safeinstall.goatcounter.com).
 

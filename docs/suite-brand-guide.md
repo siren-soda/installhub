@@ -1,5 +1,7 @@
 # Installer Tools Suite — Brand Guide
 
+> **Decisions, 17 Nov 2026 (Dean):** TechMate lives at techmate.installhub.org under the InstallHub suite. SafeInstall gets the shared "Part of InstallHub" footer (same as TechMate's) and a TechMate card in its Resources tab. TechMate keeps footer + About disclaimers with no terms gate. Moving both sites onto `suite.css` is parked until a redesign. Section 9 below is kept for history.
+
 Covers SafeInstall (safeinstall.org) and TechMate (installer manuals + tech help). Source of truth: the live SafeInstall site as of 14 Nov 2026. TechMate items marked [verify] come from planning notes, not the live site — check them against the repo siren-soda/techmate.
 
 ## 1. Logo family
