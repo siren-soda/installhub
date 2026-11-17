@@ -37,11 +37,10 @@ Netlify environment variable changes only take effect on the next production dep
 - Waiting on Dean: GoatCounter code → add anonymous visit + action counting (pre-start sent, SWMS sent, PDF saved, installs) and update privacy notice.
 
 ## Queue — TechMate
-- Queued on `next` (missed the 17 Nov deploy — the task had no access to the repo): new guides from the manual library (Hills Reliance R-series, Hills NVR, Honeywell Performance NVR, Helix, Qolsys IQ Panel 2, Ajax, Bosch Solution 6000 and 844/862/880, Concept 3000/4000 draft), "Which panel?" picker on fault pages, Ask TechMate AI searching the manual library, InstallHub terms/privacy links, private spend page, suggest-form fix.
-- Waiting on Dean: Netlify env vars to switch on Ask TechMate — `ANTHROPIC_API_KEY`, `RESEND_API_KEY`, `ALERT_EMAIL` (optional `DAILY_ALERT_USD`). Takes effect at the next weekly deploy.
+- (empty — last deployed Tue 17 Nov 2026, by hand)
 - Waiting on Dean: review the Draft guides (quick-fix boxes first); mark reviewed ones `status: reviewed`.
 
 Decided 17 Nov 2026 (Dean): factory default codes that are printed in manufacturer manuals may be published, labelled as factory defaults with the manual and page, plus a reminder to change them. Never publish codes from company in-house docs or any real site's codes.
 
 ## Queue — InstallHub
-- Queued on `next` (missed the 17 Nov deploy — the task had no access to the repo): add InstallHub terms of use and privacy policy links.
+- (empty — last deployed Tue 17 Nov 2026, by hand)
