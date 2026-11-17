@@ -37,11 +37,12 @@ Netlify environment variable changes only take effect on the next production dep
 - Queued on `next`: anonymous GoatCounter visit + action counting (pre-start sent, SWMS sent, PDF saved, app installed) and updated privacy wording. Code: `safeinstall` (safeinstall.goatcounter.com).
 
 ## Queue — TechMate
+- Queued on `next`: anonymous GoatCounter visit counts (code `techmate`), Ask TechMate AI question counts (count only, never the question), app installs; About page privacy wording.
 - (empty — last deployed Tue 17 Nov 2026, by hand)
 - Waiting on Dean: review the Draft guides (quick-fix boxes first); mark reviewed ones `status: reviewed`.
 
 Decided 17 Nov 2026 (Dean): factory default codes that are printed in manufacturer manuals may be published, labelled as factory defaults with the manual and page, plus a reminder to change them. Never publish codes from company in-house docs or any real site's codes.
 
 ## Queue — InstallHub
-- Queued on `next`: privacy policy updated for SafeInstall's GoatCounter visit counts (goes live with SafeInstall's counter).
+- Queued on `next`: privacy policy updated for SafeInstall's and TechMate's GoatCounter visit counts (goes live with the counters).
 - (empty — last deployed Tue 17 Nov 2026, by hand)
