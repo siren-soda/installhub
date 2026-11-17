@@ -39,18 +39,13 @@ Netlify environment variable changes only take effect on the next production dep
 - Queued on `next`: anonymous GoatCounter visit + action counting (pre-start sent, SWMS sent, PDF saved, app installed) and updated privacy wording. Code: `safeinstall` (safeinstall.goatcounter.com).
 
 ## Queue — SafeTradie
-- New 17 Nov 2026: pre-start and SWMS for residential electricians, plumbers/gasfitters and carpenters, forked from SafeInstall. `main` holds the first version; it goes live when Dean connects the repo in Netlify.
-- Waiting on Dean: connect siren-soda/safetradie in Netlify (production branch `main`, branch deploys off), add `RESEND_API_KEY`, add custom domain safetradie.installhub.org (CNAME at Porkbun).
+- (empty — first deployed Tue 17 Nov 2026, by hand, at safetradie.installhub.org; Resend key added in Netlify)
 
 ## Queue — TechMate
-- Queued on `next`: anonymous GoatCounter visit counts (code `techmate`), Ask TechMate AI question counts (count only, never the question), app installs; About page privacy wording.
-- (empty — last deployed Tue 17 Nov 2026, by hand)
+- (empty — last deployed Tue 17 Nov 2026 ~9:30 pm, by hand at Dean's request: GoatCounter visit counts and About privacy wording)
 - Waiting on Dean: review the Draft guides (quick-fix boxes first); mark reviewed ones `status: reviewed`.
 
 Decided 17 Nov 2026 (Dean): factory default codes that are printed in manufacturer manuals may be published, labelled as factory defaults with the manual and page, plus a reminder to change them. Never publish codes from company in-house docs or any real site's codes.
 
 ## Queue — InstallHub
-- Queued on `next`: SafeTradie card ("For home trades") on the home page, /safetradie short link, SafeTradie added to terms of use and privacy policy.
-- Queued on `next`: new home page tagline — "Free tools for installers & trades" under the logo; intro "Free tools for security installers and trades. No accounts, no cost, made for your phone on site."
-- Queued on `next`: privacy policy updated for SafeInstall's and TechMate's GoatCounter visit counts (goes live with the counters).
-- (empty — last deployed Tue 17 Nov 2026, by hand)
+- (empty — last deployed Tue 17 Nov 2026 ~9:30 pm, by hand at Dean's request: SafeTradie card and short link, new tagline "Free tools for security installers and trades", SafeTradie in terms and privacy, GoatCounter wording in privacy)
