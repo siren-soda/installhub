@@ -39,8 +39,7 @@ Netlify environment variable changes only take effect on the next production dep
 - Queued on `next`: anonymous GoatCounter visit + action counting (pre-start sent, SWMS sent, PDF saved, app installed) and updated privacy wording. Code: `safeinstall` (safeinstall.goatcounter.com).
 
 ## Queue — SafeTradie
-- (empty — first deployed Tue 17 Nov 2026, by hand, at safetradie.installhub.org; Resend key added in Netlify)
-- Queued on `next`: "How it works" demo address changed to a made-up one (7 Spanner St, Toolville) — the old one was Dean's real suburb.
+- (empty — first deployed Tue 17 Nov 2026, by hand, at safetradie.installhub.org; Resend key added in Netlify. Redeployed ~9:40 pm at Dean's request: made-up demo address in "How it works")
 
 ## Queue — TechMate
 - (empty — last deployed Tue 17 Nov 2026 ~9:30 pm, by hand at Dean's request: GoatCounter visit counts and About privacy wording)
