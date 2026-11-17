@@ -51,5 +51,6 @@ Decided 17 Nov 2026 (Dean): factory default codes that are printed in manufactur
 
 ## Queue — InstallHub
 - Queued on `next`: SafeTradie card ("For home trades") on the home page, /safetradie short link, SafeTradie added to terms of use and privacy policy.
+- Queued on `next`: new home page tagline — "Free tools for installers & trades" under the logo; intro "Free tools for residential security installers and trades. No accounts, no cost, made for your phone on site."
 - Queued on `next`: privacy policy updated for SafeInstall's and TechMate's GoatCounter visit counts (goes live with the counters).
 - (empty — last deployed Tue 17 Nov 2026, by hand)
