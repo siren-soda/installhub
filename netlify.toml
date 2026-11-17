@@ -2,6 +2,13 @@
 [build]
   publish = "."
 
+# Internal notes (deploy policy, brand guide) live in docs/ and must never be served.
+[[redirects]]
+  from = "/docs/*"
+  to = "/index.html"
+  status = 404
+  force = true
+
 # Short links: installhub.org/safeinstall and installhub.org/techmate
 [[redirects]]
   from = "/safeinstall"
