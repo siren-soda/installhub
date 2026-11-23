@@ -44,6 +44,7 @@ Netlify environment variable changes only take effect on the next production dep
 - (empty — first deployed Tue 17 Nov 2026, by hand, at safetradie.installhub.org; Resend key added in Netlify. Redeployed ~9:40 pm at Dean's request: made-up demo address in "How it works")
 
 ## Queue — TechMate
+- Queued on `next` (Monday scan 23 Nov): manual library + Ajax MotionProtect and KeyPad Plus data sheets, Bosch Solution 4/4+4 and 880 installer manuals; Ajax guide mounting and battery facts.
 - (empty — last deployed Tue 17 Nov 2026 ~9:30 pm, by hand at Dean's request: GoatCounter visit counts and About privacy wording)
 - Queued on `next` (18 Nov): SafeInstall cross-links. One pre-start line on 7 fault guides with a real on-site risk and on the battery calculator (opens SafeInstall with the job pre-ticked); Ask TechMate AI adds one pre-start line, once per conversation, only for physical work (roof space, ladder, mains, drilling masonry, swapping batteries); the line shrinks for 30 days after someone opens SafeInstall; all SafeInstall links carry `?ref=techmate` and clicks both ways are counted in GoatCounter.
 - Waiting on Dean: review the Draft guides (quick-fix boxes first); mark reviewed ones `status: reviewed`.
